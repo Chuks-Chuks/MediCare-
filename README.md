@@ -41,3 +41,53 @@ This architecture supports batch, streaming, and structured/semi-structured data
 
 ## Repository Structure
 
+medicare-data-warehouse/
+│
+├── README.md                      # Executive summary + navigation to detailed docs
+├── architecture/
+│   └── architecture-diagram.png  # High-level architecture image
+│
+├── data-modeling/
+│   ├── star-schema.png
+│   └── data-vault-diagram.png
+│
+├── notebooks/
+│   ├── bronze_layer_etl.ipynb
+│   ├── silver_cleaning.ipynb
+│   └── gold_fact_tables.ipynb
+│
+├── pipelines/
+│   └── adf_pipeline_json/        # Exported ADF pipelines as JSON
+│
+├── sql/
+│   ├── create_fact_tables.sql
+│   ├── materialized_views.sql
+│   └── optimization_queries.sql
+│
+├── powerbi/
+│   └── dashboard_screenshots/
+│
+├── infrastructure/
+│   ├── terraform/
+│   └── azure-devops-pipelines/
+│
+├── governance/
+│   └── data-quality-framework.md
+│
+└── LICENSE
+
+- End-to-end data engineering lifecycle coverage: ingestion, modeling, analytics, governance.
+- Streaming analytics using Databricks and Azure Event Hubs.
+- Scalable data lake architecture with Bronze/Silver/Gold layers using Delta Lake.
+- Data quality enforcement using Great Expectations with CI/CD integration.
+- Secure, governed analytics with row-level security and PII masking.
+
+---
+
+## Learnings & Impact
+
+This project demonstrates the full lifecycle of enterprise-grade data platform development in the healthcare domain. It highlights my capabilities in:
+- Designing cloud-native data architectures
+- Building robust, scalable pipelines
+- Applying best practices for data quality, governance, and observability
+- Automating infrastructure and deployments in a DevOps-first culture
