@@ -19,7 +19,7 @@
 
 ## Architecture Overview
 
-![Architecture Diagram](./architecture/architecture-diagram.png)
+![Architecture Diagram](./architecture/medicare-architect.png)
 
 This architecture supports batch, streaming, and structured/semi-structured data ingestion through a layered data lake (Bronze → Silver → Gold), optimized for analytical queries and compliance.
 
